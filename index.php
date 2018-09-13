@@ -10,10 +10,17 @@ function aleatoire(){
     { 
     $i++;
     }
-    return "Je trouve bien $x en ".$i." fois";
+    if ($x>150){
+    return "<p style=\"border: solid; border-color: red; border-width: 2px;\">Je trouve bien $x en ".$i." foiss</p>";
+    } else {
+        return "Je trouve bien $x en ".$i." fois";
+        }
+
 }
 
 echo aleatoire();
+
+
 
 
 ?>
